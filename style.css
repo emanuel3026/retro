@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#373a43, #696e7d, #373a43);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+
+.top-bar {
+    background: linear-gradient(#30283b, #30283b);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 8px solid #000000;
+}
+
+h1 {
+    font-size: 3.2rem;
+    text-shadow: 4px 4px 0 #000000;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #ffcb05;
+    text-shadow: 2px 2px 0 #3b4cca;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.1);
+    border: 5px solid #ffcb05;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+li:hover {
+    transform: scale(1.08);
+    border-color: white;
+    box-shadow: 0 15px 30px rgba(255, 203, 5, 0.4);
+}
+
+li a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+li img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+li span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    li a { flex-direction: column; text-align: center; }
+}
