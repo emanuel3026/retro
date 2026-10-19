@@ -42,10 +42,33 @@ h1 {
     text-align: center;
     font-size: 2.2rem;
     margin-bottom: 40px;
-    color: #ffcb05;
-    text-shadow: 2px 2px 0 #3b4cca;
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #000000;
 }
 
+/* Navigation */
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 4px solid #3d2b50;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff;
+}
+
+/* Menu Grid */
 ul {
     list-style: none;
     display: grid;
@@ -55,7 +78,7 @@ ul {
 
 li {
     background: rgba(255, 255, 255, 0.1);
-    border: 5px solid #ffcb05;
+    border: 5px solid #ffffff;
     border-radius: 20px;
     overflow: hidden;
     transition: all 0.4s;
@@ -64,7 +87,7 @@ li {
 li:hover {
     transform: scale(1.08);
     border-color: white;
-    box-shadow: 0 15px 30px rgba(255, 203, 5, 0.4);
+    box-shadow: 0 15px 30px rgb(57, 57, 57);
 }
 
 li a {
@@ -87,13 +110,182 @@ li span {
     font-weight: bold;
 }
 
+/* Specs Page */
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.spec-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 4px solid #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.3s;
+}
+
+.spec-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgb(57, 57, 57);
+}
+
+.spec-card h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #3b4cca;
+    padding-bottom: 10px;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.spec-item:last-child {
+    border-bottom: none;
+}
+
+.spec-label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.spec-value {
+    text-align: right;
+    color: white;
+}
+
+/* Games Store Page */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.game-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 4px solid #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgb(57, 57, 57);
+}
+
+.game-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #3b4cca, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.game-info {
+    padding: 20px;
+}
+
+.game-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.game-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.buy-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(#ffffff, #383838);
+    border: none;
+    border-radius: 8px;
+    color: #30283b;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buy-btn:hover {
+    background: linear-gradient(#ff9500, #ffffff);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgb(57, 57, 57);
+}
+
+/* About Page */
+.about-content {
+    background: rgba(255, 255, 255, 0.1);
+    border: 4px solid #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+.about-content h3 {
+    color: #ffffff;
+    margin: 25px 0 15px 0;
+    font-size: 1.8rem;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.feature-list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.feature-list li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.feature-list li:before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 30px;
     background: rgba(0, 0, 0, 0.4);
     margin-top: 50px;
+    border-top: 4px solid #ffffff;
 }
 
 @media (max-width: 768px) {
     li a { flex-direction: column; text-align: center; }
+    nav a { display: block; margin: 10px 0; }
+    .about-content { padding: 20px; }
 }
