@@ -127,7 +127,7 @@ li span {
 }
 
 .spec-card:hover {
-    transform: translateY(-50px);
+    transform: translateY(-5px);
     box-shadow: 0 10px 25px rgb(57, 57, 57);
 }
 
