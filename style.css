@@ -229,7 +229,7 @@ li span {
 }
 
 .buy-btn:hover {
-    background: linear-gradient(#ff9500, #ffffff);
+    background: linear-gradient(#58c0e9, #ffffff);
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgb(57, 57, 57);
 }
